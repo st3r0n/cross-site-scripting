@@ -32,6 +32,12 @@ if xss is in attribute value we may be able to bypass it using
 or something like this
 " autofocus onfocus=alert(document.domain) x="  -----> introduce some new attribute
 
-eg: ----->
+eg: ----->1 suppose our input goes to an attribute like value
+then html code is writtten as value="input"  ---> to bypass this we can input something like "><script>payload</script>
+then it will become value=""<script>payload</script>
+this will only work if angle brackets are not blocked
+
+2 what if angle brackets are blocked:
+
 
 
