@@ -1,2 +1,7 @@
 cross site scripting contexts
 
+1. xss betwenn tags
+when xss is between tags we can directlya dd our paylaod as is would not require us to bypass anything as such
+
+2. 
+
