@@ -38,6 +38,8 @@ then it will become value=""<script>payload</script>
 this will only work if angle brackets are not blocked
 
 2 what if angle brackets are blocked:
+then we canuse somthing like this (some event handler) " autofocus onfocus=alert(document.domain) x="
+then it become value="" autofocus onfocus=alert(document.domain) x="" which will work
 
 
 
