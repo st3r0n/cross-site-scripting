@@ -35,11 +35,11 @@ or something like this
 eg: ----->1 suppose our input goes to an attribute like value
 then html code is writtten as value="input"  ---> to bypass this we can input something like "><script>payload</script>
 then it will become value=""<script>payload</script>
-this will only work if angle brackets are not blocked
+this will only work if angle brackets are not blocked                          -------> direct script
 
 2 what if angle brackets are blocked:
 then we canuse somthing like this (some event handler) " autofocus onfocus=alert(document.domain) x="
-then it become value="" autofocus onfocus=alert(document.domain) x="" which will work
+then it become value="" autofocus onfocus=alert(document.domain) x="" which will work                      --------> any usefulevent
 
 
 
