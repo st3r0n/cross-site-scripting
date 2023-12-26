@@ -2,6 +2,12 @@ cross site scripting contexts
 
 1. xss betwenn tags
 when xss is between tags we can directlya dd our paylaod as is would not require us to bypass anything as such
+this may include 
+I simple payload like alert to test the presence of xss
+IIwhen most of the tags are blocked we may be able to use bruteforce to find the trags and their attributes taht can be allowed 
+and then use those to perform xss attack
+III when all tags are blocaked exept for custom tags then we may need to create our own payload   -----> most importrant
+
 
 2. 
 
