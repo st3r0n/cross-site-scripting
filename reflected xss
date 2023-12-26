@@ -32,4 +32,6 @@ if xss is in attribute value we may be able to bypass it using
 or something like this
 " autofocus onfocus=alert(document.domain) x="  -----> introduce some new attribute
 
+eg: ----->
+
 
