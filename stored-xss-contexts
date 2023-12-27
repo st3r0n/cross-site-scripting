@@ -1,1 +1,11 @@
+1.XSS between HTML tags
+when it is in html tags we can directly iinclude out script inside it without any need for bypass etc
 
+
+2.XSS inside html tag attribute -----> or data will be set to value of any of the attributes of html tags so wen nned to get out of it
+for whis either we can clode the tag and add " or ' 
+OR
+we can find some evrnt that could trigger our code where we can insert the malicious js 
+eg i---->     "><script>alert(document.domain)</script>                 here suppose we have code like
+value="user input ">   so it becomes     vaule=""><script>alert(document.domain)</script>">   --> which will bypass 
+eg ii ----> " autofocus onfocus=alert(document.domain) x="
