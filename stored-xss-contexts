@@ -13,3 +13,14 @@ eg ii ----> " autofocus onfocus=alert(document.domain) x="
 
 when we have href ytag we can include xss like javascript:function or code we wan to include
 eg javascript:alert()
+
+
+
+3. xss in javascipt
+i terminatinf existing script ---> when out input goes to any script we can break out of it usnin </script>
+ii breaking js stirng literal ------> ehat if our input goes to any string in javascript ----> we can use someting like '-alert(document.domain)-'      OR     ';alert(document.domain)//
+
+
+
+
+4. making use of html encoding
