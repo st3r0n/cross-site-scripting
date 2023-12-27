@@ -1,1 +1,7 @@
+it hapens when user input is directly stored within the website and that too inside the database of website
+here database is not merely and db but it can be the page or log in which it can be stored in 
+
+1. direct stored xss with nothing encoded
+in rthis attack we can directly store our malicios javascript and it will be stored
+
 
