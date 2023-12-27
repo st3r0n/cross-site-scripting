@@ -22,5 +22,10 @@ ii breaking js stirng literal ------> ehat if our input goes to any string in ja
 
 
 
+4. making use of html encoding  ----> sometimes we want to break out of javascript context but character like ' or " are blocked so we can use html encoding to bypass such things 
+examples are:
 
-4. making use of html encoding
+<a href="#" onclick="... var input='controllable data here'; ...">
+then we can break out as 
+&apos;-alert(document.domain)-&apos;    ----> here we used html encoding to use ' character 
+
